@@ -1,0 +1,2683 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+			rel="stylesheet">
+		<link rel="icon" type="image/svg+xml" href="favicon.svg">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Ecobazar</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__top top-header">
+					<div class="top-header__container">
+						<address class="top-header__location">
+							<a href="#" class="top-header__link-location --icon-author">
+								Store Location: Lincoln- 344, Illinois, Chicago, USA
+							</a>
+						</address>
+
+						<div class="top-header__actions actions-top-header">
+							<div class="actions-top-header__lang-currency lang-currency">
+								<select
+									name="form[lang]"
+									id
+									class="
+										lang-currency__select
+										lang-currency__select--icon-shevron
+									">
+									<option value="eng" class="lang-currency__item">Eng</option>
+									<option value="ua" class="lang-currency__item">Ua</option>
+									<option value="smt" class="lang-currency__item">Smt</option>
+								</select>
+
+								<select name="form[currency]" id
+									class="lang-currency__select --icon-shevron">
+									<option value="usd" class="lang-currency__item">USD</option>
+									<option value="uah" class="lang-currency__item">UAH</option>
+									<option value="eur" class="lang-currency__item">EUR</option>
+								</select>
+							</div>
+
+							<div class="actions-top-header__auth auth-top-header">
+								<a href="#" target="_blank" class="auth-top-header__link">Sign In /</a>
+								<a href="#" target="_blank" class="auth-top-header__link">Sign Up</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header__middle middle-header">
+					<div class="middle-header__container">
+						<div class="middle-header__logo logo-header">
+							<img
+								src="img/svg/zelena_gilochka.svg"
+								alt="logotyp zelena gilochka"
+								class="logo-header__icon">
+
+							<span class="logo-header__text">Ecobazar</span>
+						</div>
+
+						<div class="middle-header__place-search">
+							<form
+								action="#"
+								class="middle-header__search search-header search-header--icon-link">
+								<input type="text" class="search-header__input" placeholder="Search">
+								<button
+									class="search-header__button button button--middle">Search</button>
+							</form>
+						</div>
+
+						<div class="middle-header__actions actions-header">
+							<a href="#" class="actions-header__favorite">
+								<div class="actions-header__icon-heart"></div>
+							</a>
+
+							<a href="#" class="actions-header__card card-header">
+								<div class="card-header__icon-bag">
+									<span>9</span>
+								</div>
+
+								<div class="card-header__body">
+									<div class="card-header__label">Shopping cart:</div>
+									<div class="card-header__value">$57.00</div>
+								</div>
+							</a>
+						</div>
+
+						<button class="icon-menu" type="button"><span></span></button>
+					</div>
+				</div>
+
+				<div class="header__bottom bottom-header">
+					<div class="bottom-header__container">
+						<div class="bottom-header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">Home</a>
+										<button class="menu__button --icon-arrow"></button>
+
+										<ul class="sub-menu">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">this is link</a>
+											</li>
+
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">this is link</a>
+											</li>
+
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">this is link</a>
+											</li>
+										</ul>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Shop</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Pages</a>
+
+										<button class="menu__button --icon-arrow"></button>
+
+										<ul class="sub-menu">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">this is link</a>
+											</li>
+
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">this is link</a>
+											</li>
+
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">this is link</a>
+											</li>
+										</ul>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Blog</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">About Us</a>
+									</li>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Contacts Us</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+						<a href="tel:2195550114" class="bottom-header__phone --icon-author">
+							<span>(219) 555-0114</span>
+						</a>
+					</div>
+				</div>
+			</header>
+
+			<main class="page">
+				<div class="page__hero hero">
+					<div class="hero__container">
+						<article class="hero__item item-hero item-hero">
+							<a href="#" class="item-hero__link">
+								<div href="#" class="item-hero__body type-1-hero-item">
+									<h1 class="type-1-hero-item__title">Fresh & Healthy <br> Organic
+										Food</h1>
+
+									<div class="type-1-hero-item__info">
+										<div class="type-1-hero-item__sale">
+											Sale up to <strong>30% OFF</strong>
+										</div>
+
+										<div class="type-1-hero-item__label">
+											Free shipping on all your order.
+										</div>
+									</div>
+
+									<button
+										type="button"
+										class="
+											type-1-hero-item__button
+											button
+											button--arrow
+											button--white">
+										Shop now
+									</button>
+								</div>
+
+								<div class="item-hero__picture item-hero__picture--decor">
+									<img
+										src="img/heroSection/bigBanner.jpg"
+										alt="banner with smilling girl"
+										class="item-hero__image">
+								</div>
+							</a>
+						</article>
+
+						<article class="hero__item item-hero item-hero">
+							<a href="#" class="item-hero__link">
+								<div class="item-hero__body type-2-hero-item">
+									<div class="type-2-hero-item__label">Summer Sale</div>
+
+									<h2 class="type-2-hero-item__title">75% OFF</h2>
+
+									<div class="type-2-hero-item__text">
+										<p>Only Fruit & Vegetable</p>
+									</div>
+
+									<button type="button" class="type-2-hero-item__button link-arrow">
+										Shop now
+									</button>
+								</div>
+
+								<div class="item-hero__picture">
+									<img
+										src="img/heroSection/fruitsBanner.jpg"
+										alt="bag with juicy fuits"
+										class="item-hero__image">
+								</div>
+							</a>
+						</article>
+
+						<article class="hero__item item-hero item-hero">
+							<a href="#" class="item-hero__link">
+								<div class="item-hero__body type-3-hero-item">
+									<div class="type-3-hero-item__label">Best Deal</div>
+
+									<h2 class="type-3-hero-item__title">
+										Special Products <br> Deal of the Month
+									</h2>
+
+									<button type="button" class="type-3-hero-item__button link-arrow">
+										Shop now
+									</button>
+								</div>
+
+								<div class="item-hero__picture">
+									<img
+										src="img/heroSection/fonBanner.jpg"
+										alt="banner with green leaves"
+										class="item-hero__image">
+								</div>
+							</a>
+						</article>
+					</div>
+				</div>
+
+				<div class="page__advantages advantages">
+					<div class="advantages__container">
+						<div class="advantages__items">
+							<arcticle class="advantages__item item-advantages">
+
+								<figure class="item-advantages__picture">
+									<img
+										src="img/advantagesSection/lorry.svg"
+										class="item-advantages__icon"
+										alt="icon with lorry for delivery">
+								</figure>
+
+								<div class="item-advantages__body">
+									<h4 class="item-advantages__title">Free Shipping</h4>
+									<p class="item-advantages__text">Free shipping on all your order</p>
+								</div>
+							</arcticle>
+
+							<arcticle class="advantages__item item-advantages">
+								<figure class="item-advantages__picture">
+									<img
+										src="img/advantagesSection/headphones.svg"
+										class="item-advantages__icon"
+										alt="icon with headphones">
+								</figure>
+
+								<div class="item-advantages__body">
+									<h4 class="item-advantages__title">Customer Support 24/7</h4>
+									<p class="item-advantages__text">Instant access to Support</p>
+								</div>
+							</arcticle>
+
+							<arcticle class="advantages__item item-advantages">
+								<figure class="item-advantages__picture">
+									<img
+										src="img/advantagesSection/shoppingBag.svg"
+										class="item-advantages__icon"
+										alt="icon with shopping bag">
+								</figure>
+
+								<div class="item-advantages__body">
+									<h4 class="item-advantages__title">100% Secure Payment</h4>
+									<p class="item-advantages__text">We ensure your money is save</p>
+								</div>
+							</arcticle>
+
+							<arcticle class="advantages__item item-advantages">
+								<figure class="item-advantages__picture">
+									<img
+										src="img/advantagesSection/package.svg"
+										class="item-advantages__icon"
+										alt="icon with some package">
+								</figure>
+
+								<div class="item-advantages__body">
+									<h4 class="item-advantages__title">Money-Back Guarantee</h4>
+									<p class="item-advantages__text">30 Days Money-Back Guarantee</p>
+								</div>
+							</arcticle>
+						</div>
+					</div>
+				</div>
+
+				<section class="page__popular popular">
+					<div class="popular__container">
+						<div class="popular__header block-header block-header--indent">
+							<h2 class="block-header__title title">Popular Categories</h2>
+							<a
+								href="#"
+								class="block-header__link link-arrow link-arrow--icon-arrow">
+								View All
+							</a>
+						</div>
+
+						<div class="popular__items">
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/fruit.jpg"
+											alt="picture with fresh fruits"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Fresh Fruit</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/image 1.png"
+											alt="picture width frash vegetables"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Fresh Vegetables</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/meatFish.jpg"
+											alt="picture with meat fish and seafood"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Meat & Fish</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/snacks.jpg"
+											alt="picture with lots of snacks"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Snacks</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/baverages.jpg"
+											alt="picture with lots of beverages"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Beverages</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/beauty.jpg"
+											alt="picture with care products"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Beauty & Health</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/bakery.jpg"
+											alt="picture bread and bakery"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Bread & Bakery</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/bakingNeeds.jpg"
+											alt="picture with all for baking needs"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Baking Needs</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/cooking.jpg"
+											alt="picture with products for cockung"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Cooking</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/diabeticFood.jpg"
+											alt="picture with diabetic food"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Diabetic Food</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/beauty.jpg"
+											alt="picture with dish detergents"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Dish Detergents</h5>
+								</a>
+							</article>
+
+							<article class="popular__item item-category">
+								<a href="#" class="item-category__link">
+									<figure class="item-category__picture">
+										<img
+											src="img/categoriesSection/oil.jpg"
+											alt="just many bottle of oil on pic"
+											class="item-category__image">
+									</figure>
+
+									<h5 class="item-category__name">Oil</h5>
+								</a>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__popular-products popular-products">
+					<div class="popular-products__container">
+						<div class="popular-products__header block-header block-header--indent">
+							<h2 class="block-header__title title">Popular Products</h2>
+							<a
+								href="#"
+								class="block-header__link link-arrow link-arrow--icon-arrow">
+								View All
+							</a>
+						</div>
+
+						<div class="products">
+							<article class="products__item item-product">
+								<div class="item-product__labels">
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+
+									<a href="#" class="item-product__label item-product__label--best">
+										Best Sale
+									</a>
+								</div>
+
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/apple.jpg"
+										alt="few green and fresh apples"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Green Apple</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$14.99</div>
+											<div class="item-product__old">$20.99</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/oranges.jpg"
+										alt="fresh juicy orandes"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Fresh Indian Maltae</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__labels">
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+								</div>
+
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/greenCabbage.jpg"
+										alt="green chinese cabbage"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Chinese cabbage</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$12.00</div>
+											<div class="item-product__old">$15.99</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/letucce.jpg"
+										alt="green lettuce"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Green Lettuce</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$9.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/eggplant.jpg"
+										alt="few purpule eggplants"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Eggplant</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$34.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/potato.jpg"
+										alt="big potatoes"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Big Potatoes</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/corn.jpg"
+										alt="few big corn"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Corn</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__labels">
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+
+									<a href="#" class="item-product__label item-product__label--best">
+										Best Sale
+									</a>
+
+									<a href="#" class="item-product__label item-product__label--best">
+										Best Sale
+									</a>
+
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+								</div>
+
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/cauliflower.jpg"
+										alt="big and fresh cauliflower"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Fresh Cauliflower</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$12.00</div>
+											<div class="item-product__old">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__labels">
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+								</div>
+
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/greenPepper.jpg"
+										alt="few green capsicum peppers"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Green Capsicum</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$9.00</div>
+											<div class="item-product__old">$20.99</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/chilli.jpg"
+										alt="few green chili"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Green Chili</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$34.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<div class="page__sale sale">
+					<div class="sale__container">
+						<article class="sale__item item-sale">
+							<a href="#" class="item-sale__link">
+								<div class="item-sale__body">
+									<div class="item-sale__label">Best Deals</div>
+									<h4 class="item-sale__title">Sale of the Month</h4>
+
+									<div data-countdown="2025-08-19"
+										class="item-sale__countdown countdown">
+										<div class="countdown__timer">
+											<div class="countdown__digits">
+												<span>00</span>
+												<span>00</span>
+												<span>00</span>
+												<span>00</span>
+											</div>
+
+											<div class="countdown__labels">
+												<span>Days</span>
+												<span>Hours</span>
+												<span>Mins</span>
+												<span>Secs</span>
+											</div>
+										</div>
+									</div>
+
+									<button class="item-sale__button button button--white button--arrow">
+										Shop Now
+									</button>
+								</div>
+
+								<img
+									src="img/saleSection/firstBanner.jpg"
+									alt="first banner on blue fon"
+									class="item-sale__image">
+							</a>
+						</article>
+
+						<article class="sale__item item-sale">
+							<a href="#" class="item-sale__link">
+								<div class="item-sale__body">
+									<div class="item-sale__label">85% Fat Free</div>
+									<h4 class="item-sale__title">Low-Fat Meat</h4>
+
+									<div class="item-sale__info info-sale">
+										<span class="info-sale__text">Started at</span>
+										<span class="info-sale__value info-sale__value--second">$79.99</span>
+									</div>
+
+									<button class="item-sale__button button button--white button--arrow">
+										Shop Now
+									</button>
+								</div>
+
+								<img
+									src="img/saleSection/secondBanner.jpg"
+									alt="first banner on blue fon"
+									class="item-sale__image">
+							</a>
+						</article>
+
+						<article class="sale__item item-sale item-sale--black">
+							<a href="#" class="item-sale__link">
+								<div class="item-sale__body">
+									<div class="item-sale__label">Summer Sale</div>
+									<h4 class="item-sale__title">100% Fresh Fruit</h4>
+
+									<div class="item-sale__info info-sale">
+										<span class="info-sale__text">Up to</span>
+										<span class="info-sale__value info-sale__value--black-promo">64%
+											OFF</span>
+									</div>
+
+									<button class="item-sale__button button button--white button--arrow">
+										Shop Now
+									</button>
+								</div>
+
+								<img
+									src="img/saleSection/thirdBanner.jpg"
+									alt="first banner on blue fon"
+									class="item-sale__image">
+							</a>
+						</article>
+					</div>
+				</div>
+
+				<section class="page__hot hot">
+					<div class="hot__container">
+						<div class="hot__header block-header block-header--indent">
+							<h2 class="block-header__title title">Hot Deals</h2>
+							<a
+								href="#"
+								class="block-header__link link-arrow link-arrow--icon-arrow">
+								View All
+							</a>
+						</div>
+
+						<div class="products">
+							<article class="products__item item-product item-product--big">
+								<div class="item-product__header">
+									<div class="item-product__labels">
+										<a href="#" class="item-product__label item-product__label--sale">
+											Sale
+											<span>50%</span>
+										</a>
+
+										<a href="#" class="item-product__label item-product__label--best">
+											Best Sale
+										</a>
+									</div>
+
+									<a href="#" class="item-product__picture">
+										<img
+											src="img/productsSection/big.jpg"
+											alt="few green and fresh apples"
+											class="item-product__image">
+									</a>
+
+									<div class="item-product__line-actions line-actions">
+										<a href="#" class="line-actions__item line-actions__item--like"></a>
+
+										<button
+											class="line-actions__add-to-card button button--middle add-to-card">
+											<span>Add to Cart</span>
+
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+												viewBox="0 0 20 21" fill="none">
+												<path
+													d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+													stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+
+										<a href="#" class="line-actions__item line-actions__item--eye"></a>
+									</div>
+								</div>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Green Apple</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$12.00</div>
+											<div class="item-product__old">$24.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating rating--big">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+
+											<div class="rating__quantity">(524 Feedback)</div>
+										</form>
+									</div>
+
+									<div data-countdown="2025-08-15"
+										class="item-product__countdown countdown countdown--mini">
+										<div class="countdown__label">Hurry up! Offer ends In:</div>
+
+										<div class="countdown__timer">
+											<div class="countdown__digits">
+												<span>00</span>
+												<span>00</span>
+												<span>00</span>
+												<span>00</span>
+											</div>
+
+											<div class="countdown__labels">
+												<span>Days</span>
+												<span>Hours</span>
+												<span>Mins</span>
+												<span>Secs</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/oranges.jpg"
+										alt="fresh juicy orandes"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Fresh Indian Maltae</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__labels">
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+								</div>
+
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/greenCabbage.jpg"
+										alt="green chinese cabbage"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Chinese cabbage</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$12.00</div>
+											<div class="item-product__old">$15.99</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/letucce.jpg"
+										alt="green lettuce"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Green Lettuce</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$9.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/eggplant.jpg"
+										alt="few purpule eggplants"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Eggplant</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$34.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/potato.jpg"
+										alt="big potatoes"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Big Potatoes</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/corn.jpg"
+										alt="few big corn"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Corn</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__labels">
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+
+									<a href="#" class="item-product__label item-product__label--best">
+										Best Sale
+									</a>
+
+									<a href="#" class="item-product__label item-product__label--best">
+										Best Sale
+									</a>
+
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+								</div>
+
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/cauliflower.jpg"
+										alt="big and fresh cauliflower"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Fresh Cauliflower</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$12.00</div>
+											<div class="item-product__old">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__labels">
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+								</div>
+
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/greenPepper.jpg"
+										alt="few green capsicum peppers"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Green Capsicum</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$9.00</div>
+											<div class="item-product__old">$20.99</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/chilli.jpg"
+										alt="few green chili"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Green Chili</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$34.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/oranges.jpg"
+										alt="fresh juicy orandes"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Fresh Indian Maltae</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/corn.jpg"
+										alt="few big corn"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Corn</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<div class="rating__items">
+												<input type="radio" value="5" name="rating" class="rating__item">
+												<input type="radio" value="4" name="rating" class="rating__item">
+												<input type="radio" value="3" name="rating" class="rating__item">
+												<input type="radio" value="2" name="rating" class="rating__item">
+												<input type="radio" value="1" name="rating" class="rating__item">
+											</div>
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__banner sale-banner" data-parallax>
+					<div class="sale-banner__container">
+						<div class="sale-banner__body">
+							<div class="sale-banner__content">
+								<h5 class="sale-banner__title">Summer Sale</h5>
+
+								<div class="sale-banner__value">
+									<span>37%</span>
+									OFF
+								</div>
+
+								<div class="sale-banner__info">
+									<p>Free on all your order, Free Shipping and 30 days
+										money-backguarantee</p>
+								</div>
+
+								<a href="#" class="sale-banner__button button button--arrow">Shop Now</a>
+							</div>
+
+							<img
+								src="img/banners/discount_bannar.jpg"
+								alt="banner on black background with green vegetables"
+								class="sale-banner__image"
+								data-parallax-item
+								>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__popular-products popular-products">
+					<div class="popular-products__container">
+						<div class="popular-products__header block-header block-header--indent">
+							<h2 class="block-header__title title">Featured Products</h2>
+							<a
+								href="#"
+								class="block-header__link link-arrow link-arrow--icon-arrow">
+								View All
+							</a>
+						</div>
+
+						<div class="products">
+							<article class="products__item item-product">
+								<div class="item-product__labels">
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+
+									<a href="#" class="item-product__label item-product__label--best">
+										Best Sale
+									</a>
+								</div>
+
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/apple.jpg"
+										alt="few green and fresh apples"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Green Apple</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$14.99</div>
+											<div class="item-product__old">$20.99</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/oranges.jpg"
+										alt="fresh juicy orandes"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Fresh Indian Maltae</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$20.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__labels">
+									<a href="#" class="item-product__label item-product__label--sale">
+										Sale
+										<span>50%</span>
+									</a>
+								</div>
+
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/greenCabbage.jpg"
+										alt="green chinese cabbage"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Chinese cabbage</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$12.00</div>
+											<div class="item-product__old">$15.99</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/letucce.jpg"
+										alt="green lettuce"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Green Lettuce</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$9.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+
+							<article class="products__item item-product">
+								<div class="item-product__actions">
+									<a href="#"
+										class="item-product__action item-product__action--like"></a>
+									<a href="#"
+										class="item-product__action item-product__action--eye">
+									</a>
+								</div>
+
+								<a href="#" class="item-product__picture">
+									<img
+										src="img/productsSection/eggplant.jpg"
+										alt="few purpule eggplants"
+										class="item-product__image">
+								</a>
+
+								<div class="item-product__body">
+									<div class="item-product__content">
+										<h4 class="item-product__title">
+											<a href="#" class="item-product__name">Eggplant</a>
+										</h4>
+
+										<div class="item-product__price">
+											<div class="item-product__current">$34.00</div>
+										</div>
+
+										<form action="#" class="item-product__rating rating">
+											<input type="radio" value="5" name="rating" class="rating__item">
+											<input type="radio" value="4" name="rating" class="rating__item">
+											<input type="radio" value="3" name="rating" class="rating__item">
+											<input type="radio" value="2" name="rating" class="rating__item">
+											<input type="radio" value="1" name="rating" class="rating__item">
+										</form>
+									</div>
+
+									<button class="item-product__add-to-card add-to-card">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+											viewBox="0 0 20 21" fill="none">
+											<path
+												d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333"
+												stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__news lates-news">
+					<div class="lates-news__container">
+						<div
+							class="lates-news__block-header block-header--center block-header--indent">
+							<h2 class="block-header__title title">Latest News</h2>
+						</div>
+
+						<div class="lates-news__items news-items">
+							<article class="news-items__item news-item">
+								<div class="news-item__header">
+									<a href="#" class="news-item__link">
+										<img
+											src="img/newsSection/oranges.jpg"
+											alt="sliced oranges on blue background"
+											class="news-item__image">
+									</a>
+
+									<time datetime class="news-item__date">
+										18 <small>nov</small>
+									</time>
+								</div>
+
+								<div class="news-item__body">
+									<ul class="news-item__tags">
+										<li><a href="#" class="news-item__tag --icon-label">Food</a></li>
+										<li><a href="#" class="news-item__tag --icon-author">By Admin</a></li>
+										<li><a href="#" class="news-item__tag --icon-link">Comments</a></li>
+									</ul>
+
+									<h4 class="news-item__title">
+										<a href="#" class="news-item__link-title">
+											Curabitur porttitor orci eget neque accumsan venenatis. Nunc
+											fermentum.
+										</a>
+									</h4>
+
+									<a href="#"
+										class="news-item__arrow-link link-arrow link-arrow--icon-arrow">
+										Read More
+									</a>
+								</div>
+							</article>
+
+							<article class="news-items__item news-item">
+								<div class="news-item__header">
+									<a href="#" class="news-item__link">
+										<img
+											src="img/newsSection/eggs.jpg"
+											alt="sliced boiled fresh eggs"
+											class="news-item__image">
+									</a>
+
+									<time datetime class="news-item__date">
+										29 <small>jan</small>
+									</time>
+								</div>
+
+								<div class="news-item__body">
+									<ul class="news-item__tags">
+										<li><a href="#" class="news-item__tag --icon-label">Food</a></li>
+										<li><a href="#" class="news-item__tag --icon-author">By Admin</a></li>
+										<li><a href="#" class="news-item__tag --icon-link">Comments</a></li>
+									</ul>
+
+									<h4 class="news-item__title">
+										<a href="#" class="news-item__link-title">
+											Curabitur porttitor orci eget neque accumsan venenatis. Nunc
+											fermentum.
+										</a>
+									</h4>
+
+									<a href="#"
+										class="news-item__arrow-link link-arrow link-arrow--icon-arrow">
+										Read More
+									</a>
+								</div>
+							</article>
+
+							<article class="news-items__item news-item">
+								<div class="news-item__header">
+									<a href="#" class="news-item__link">
+										<img
+											src="img/newsSection/salad.jpg"
+											alt="salad with fresh vegetables"
+											class="news-item__image">
+									</a>
+
+									<time datetime class="news-item__date">
+										21 <small>feb</small>
+									</time>
+								</div>
+
+								<div class="news-item__body">
+									<ul class="news-item__tags">
+										<li><a href="#" class="news-item__tag --icon-label">Food</a></li>
+										<li><a href="#" class="news-item__tag --icon-author">By Admin</a></li>
+										<li><a href="#" class="news-item__tag --icon-link">Comments</a></li>
+									</ul>
+
+									<h4 class="news-item__title">
+										<a href="#" class="news-item__link-title">
+											Curabitur porttitor orci eget neque accumsan venenatis. Nunc
+											fermentum.
+										</a>
+									</h4>
+
+									<a href="#"
+										class="news-item__arrow-link link-arrow link-arrow--icon-arrow">
+										Read More
+									</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__reviews reviews">
+					<div class="reviews__container">
+						<div class="reviews__block-header block-header block-header--indent">
+							<h2 class="block-header__title title">Client Testimonials</h2>
+							<div class="block-header__slider-arrows">
+								<button
+									class="
+										block-header__slider-arrow 
+										block-header__slider-arrow--icon-arrow
+										block-header__slider-arrow--left
+									"
+									aria-label="previus slide">
+								</button>
+
+								<button
+									class="
+										block-header__slider-arrow 
+										block-header__slider-arrow--icon-arrow
+										block-header__slider-arrow--right
+									"
+									aria-label="next slide">
+								</button>
+							</div>
+						</div>
+
+						<div class="reviews__slider slider-reviews swiper">
+							<div class="slider-reviews__wrapper swiper-wrapper">
+								<div class="slider-reviews__slide swiper-slide">
+									<article class="item-review">
+										<div class="item-review__quote"></div>
+
+										<div class="item-review__text">
+											<p>
+												Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+												Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+												sodales. Donec sed neque eget
+											</p>
+										</div>
+
+										<div class="item-review__footer">
+											<div class="item-review__author author-review">
+												<figure class="author-review__picture">
+													<img src="img/testimonialsSection/robert.jpg" alt="customer photo"
+														class="author-review__avatar">
+												</figure>
+
+												<div class="author-review__body">
+													<h4 class="author-review__title">Robert Fox</h4>
+													<div class="author-review__type">Customer</div>
+												</div>
+											</div>
+
+											<form action="#" class="item-review__rating rating rating--big">
+												<div class="rating__items">
+													<input type="radio" value="5" name="rating" class="rating__item">
+													<input type="radio" value="4" name="rating" class="rating__item">
+													<input type="radio" value="3" name="rating" class="rating__item">
+													<input type="radio" value="2" name="rating" class="rating__item">
+													<input type="radio" value="1" name="rating" class="rating__item">
+												</div>
+											</form>
+										</div>
+									</article>
+								</div>
+
+								<div class="slider-reviews__slide swiper-slide">
+									<article class="item-review">
+										<div class="item-review__quote"></div>
+
+										<div class="item-review__text">
+											<p>
+												Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+												Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+												sodales. Donec sed neque eget
+											</p>
+										</div>
+
+										<div class="item-review__footer">
+											<div class="item-review__author author-review">
+												<figure class="author-review__picture">
+													<img src="img/testimonialsSection/dianne.jpg" alt="customer photo"
+														class="author-review__avatar">
+												</figure>
+
+												<div class="author-review__body">
+													<h4 class="author-review__title">Dianne Russell</h4>
+													<div class="author-review__type">Customer</div>
+												</div>
+											</div>
+
+											<form action="#" class="item-review__rating rating rating--big">
+												<div class="rating__items">
+													<input type="radio" value="5" name="rating" class="rating__item">
+													<input type="radio" value="4" name="rating" class="rating__item">
+													<input type="radio" value="3" name="rating" class="rating__item">
+													<input type="radio" value="2" name="rating" class="rating__item">
+													<input type="radio" value="1" name="rating" class="rating__item">
+												</div>
+											</form>
+										</div>
+									</article>
+								</div>
+
+								<div class="slider-reviews__slide swiper-slide">
+									<article class="item-review">
+										<div class="item-review__quote"></div>
+
+										<div class="item-review__text">
+											<p>
+												Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+												Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+												sodales. Donec sed neque eget
+											</p>
+										</div>
+
+										<div class="item-review__footer">
+											<div class="item-review__author author-review">
+												<figure class="author-review__picture">
+													<img src="img/testimonialsSection/eleanor.jpg" alt="customer photo"
+														class="author-review__avatar">
+												</figure>
+
+												<div class="author-review__body">
+													<h4 class="author-review__title">Eleanor Pena</h4>
+													<div class="author-review__type">Customer</div>
+												</div>
+											</div>
+
+											<form action="#" class="item-review__rating rating rating--big">
+												<div class="rating__items">
+													<input type="radio" value="5" name="rating" class="rating__item">
+													<input type="radio" value="4" name="rating" class="rating__item">
+													<input type="radio" value="3" name="rating" class="rating__item">
+													<input type="radio" value="2" name="rating" class="rating__item">
+													<input type="radio" value="1" name="rating" class="rating__item">
+												</div>
+											</form>
+										</div>
+									</article>
+								</div>
+
+								<div class="slider-reviews__slide swiper-slide">
+									<article class="item-review">
+										<div class="item-review__quote"></div>
+
+										<div class="item-review__text">
+											<p>
+												Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+												Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+												sodales. Donec sed neque eget
+											</p>
+										</div>
+
+										<div class="item-review__footer">
+											<div class="item-review__author author-review">
+												<figure class="author-review__picture">
+													<img src="img/testimonialsSection/dianne.jpg" alt="customer photo"
+														class="author-review__avatar">
+												</figure>
+
+												<div class="author-review__body">
+													<h4 class="author-review__title">Dianne Russell</h4>
+													<div class="author-review__type">Customer</div>
+												</div>
+											</div>
+
+											<form action="#" class="item-review__rating rating rating--big">
+												<div class="rating__items">
+													<input type="radio" value="5" name="rating" class="rating__item">
+													<input type="radio" value="4" name="rating" class="rating__item">
+													<input type="radio" value="3" name="rating" class="rating__item">
+													<input type="radio" value="2" name="rating" class="rating__item">
+													<input type="radio" value="1" name="rating" class="rating__item">
+												</div>
+											</form>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="page__partners partners">
+					<div class="partners__container">
+						<ul class="partners__list partner">
+							<li class="partner__item">
+								<a href="#" class="partner__link">
+									<img src="img/partnersSection/step.svg" alt="partner logo icon"
+										class="partner__image">
+								</a>
+							</li>
+
+							<li class="partner__item">
+								<a href="#" class="partner__link">
+									<img src="img/partnersSection/mango.svg" alt="partner logo icon"
+										class="partner__image">
+								</a>
+							</li>
+
+							<li class="partner__item">
+								<a href="#" class="partner__link">
+									<img src="img/partnersSection/foodNetwork.svg" alt="partner logo icon"
+										class="partner__image">
+								</a>
+							</li>
+
+							<li class="partner__item">
+								<a href="#" class="partner__link">
+									<img src="img/partnersSection/food.svg" alt="partner logo icon"
+										class="partner__image">
+								</a>
+							</li>
+
+							<li class="partner__item">
+								<a href="#" class="partner__link">
+									<img src="img/partnersSection/bookoff.svg" alt="partner logo icon"
+										class="partner__image">
+								</a>
+							</li>
+
+							<li class="partner__item">
+								<a href="#" class="partner__link">
+									<img src="img/partnersSection/series.svg" alt="partner logo icon"
+										class="partner__image">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<section class="page__instagram instagram">
+					<div class="instagram__container">
+						<div
+							class="instagram__block-header block-header block-header--center block-header--indent">
+							<h2 class="block-header__title title">Follow us on Instagram</h2>
+						</div>
+
+						<ul class="instagram__list">
+							<li class="instagram__item">
+								<a href="#" class="instagram__link">
+									<img src="img/instagramSection/tomatoes.jpg" class="instagram__image"
+										alt>
+								</a>
+							</li>
+
+							<li class="instagram__item">
+								<a href="#" class="instagram__link">
+									<img src="img/instagramSection/greenOneMore.jpg"
+										class="instagram__image" alt>
+								</a>
+							</li>
+
+							<li class="instagram__item">
+								<a href="#" class="instagram__link">
+									<img src="img/instagramSection/leaves.jpg" class="instagram__image"
+										alt>
+								</a>
+							</li>
+
+							<li class="instagram__item">
+								<a href="#" class="instagram__link">
+									<img src="img/instagramSection/peppers.jpg" class="instagram__image"
+										alt>
+								</a>
+							</li>
+
+							<li class="instagram__item">
+								<a href="#" class="instagram__link">
+									<img src="img/instagramSection/green.jpg" class="instagram__image" alt>
+								</a>
+							</li>
+
+							<li class="instagram__item">
+								<a href="#" class="instagram__link">
+									<img src="img/instagramSection/lemon.jpg" class="instagram__image" alt>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+			
+			<aside class="subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__content">
+						<h4 class="subscribe__title">Subcribe our Newsletter</h4>
+						<div class="subscribe__text">
+							<p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+								Phasellus imperdiet elit eu magna.</p>
+						</div>
+					</div>
+
+					<form action="#" class="subscribe__form">
+						<input
+							type="email"
+							class="subscribe__input"
+							placeholder="Your email address"
+							required>
+						<button type="submit" class="subscribe__button button">Subscribe</button>
+					</form>
+
+					<ul class="subscribe__social social">
+						<li class="social__item">
+							<a href="#" class="social__link social__link--icon-facebook"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--icon-twitter"></a>
+						</li>
+
+						<li class="social__item">
+							<a href="#" class="social__link social__link--icon-pinterest"></a>
+						</li>
+
+						<li class="social__item">
+							<a href="#" class="social__link social__link--icon-instagram"></a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+
+			<footer class="footer">
+				<div class="footer__body body-footer">
+					<div class="body-footer__container">
+						<div class="body-footer__content">
+							<div class="body-footer__logo logo-footer">
+								<img src="img/svg/zelena_gilochka.svg" alt="logo icon"
+									class="logo-footer__icon">
+								<h2 class="logo-footer__text">Ecobazar</h2>
+							</div>
+
+							<div class="body-footer__text">
+								<p>
+									Morbi cursus porttitor enim lobortis molestie.
+									Duis gravida turpis dui, eget bibendum magna congue nec.
+								</p>
+							</div>
+
+							<div class="body-footer__links">
+								<a href="tel:2195550114" class="body-footer__link">(219) 555-0114</a>
+								<span>or</span>
+								<a href="mailto:Proxy@gmail.com"
+									class="body-footer__link">Proxy@gmail.com</a>
+							</div>
+						</div>
+						<div class="body-footer__menus menus-footer">
+							<div class="menus-footer__column">
+								<h5 class="menus-footer__title">My Account</h5>
+
+								<ul class="menus-footer__list">
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">My Account</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Order History</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Shoping Cart</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Wishlist</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="menus-footer__column">
+								<h5 class="menus-footer__title">Helps</h5>
+
+								<ul class="menus-footer__list">
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Contact</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Faqs</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Terms & Condition</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Privacy Policy</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="menus-footer__column">
+								<h5 class="menus-footer__title">Proxy</h5>
+
+								<ul class="menus-footer__list">
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">About</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Shop</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Product</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Track Order</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="menus-footer__column">
+								<h5 class="menus-footer__title">Categories</h5>
+
+								<ul class="menus-footer__list">
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Fruit & Vegetables</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Meat & Fish</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Bread & Bakery</a>
+									</li>
+
+									<li class="menus-footer__item">
+										<a href="#" class="menus-footer__link">Beauty & Health</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__container">
+						<div class="bottom-footer__copy">
+							Ecobazar eCommerce © 2025. All Rights Reserved
+						</div>
+
+						<ul class="bottom-footer__payments payments">
+							<li class="payments__item">
+								<img src="img/footerPayments/pay.svg" alt="icon pay apple">
+							</li>
+
+							<li class="payments__item">
+								<img src="img/footerPayments/visa.svg" alt="icon pay visa">
+							</li>
+
+							<li class="payments__item">
+								<img src="img/footerPayments/discover.svg" alt="icon pay discover">
+							</li>
+
+							<li class="payments__item">
+								<img src="img/footerPayments/mastercard.svg" alt="icon pay mastercard">
+							</li>
+
+							<li class="payments__item">
+								<img src="img/footerPayments/secure.svg" alt="some secure payment">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
