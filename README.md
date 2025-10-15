@@ -18,4 +18,4 @@ Organized SCSS architecture with reusable components
 BEM Methodology — for structured and reusable CSS naming convention
 
 🌐 Demo
-🔗 [Live Preview:](https://ekaterinabessonnaya.github.io/ecobazar/)
+🔗 [Live Preview](https://ekaterinabessonnaya.github.io/ecobazar/)
