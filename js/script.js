@@ -12,14 +12,14 @@ function windowLoad() {
   document.addEventListener("click", documentAction);
 
   const coundown = document.querySelectorAll("[data-countdown]");
-  const parallaxItems = document.querySelectorAll('[data-parallax]');
+  const parallaxItems = document.querySelectorAll("[data-parallax]");
 
   if (coundown.length) {
     initCoundown(coundown);
   }
 
   if (parallaxItems.length) {
-    parallaxInit(parallaxItems)
+    parallaxInit(parallaxItems);
   }
 
   dynamicAdaptHeader();
@@ -126,51 +126,53 @@ function flyImage(productImage, cardHeader) {
   }, speed);
 }
 
-function initCoundown(coundown) {
-  coundown.forEach((coundownItem) => {
-    initCountdownItem(coundownItem);
+function initCoundown(coundowns) {
+  coundowns.forEach((countdownItem) => {
+    initCountdownItem(countdownItem);
   });
 }
 
-function initCountdownItem(countdownItem) {
-  const goalTime = countdownItem.dataset.countdown;
+function initCountdownItem(countdownItem, daysToAdd = 7) {
+  const goalTime = Date.now() + daysToAdd * 24 * 60 * 60 * 1000;
+  const countdownItemSpans = countdownItem.querySelectorAll(
+    ".countdown__digits span"
+  );
 
-  if (goalTime) {
-    const countdownItemSpans = countdownItem.querySelectorAll(
-      ".countdown__digits span"
-    );
-    const timeGoal = Date.parse(goalTime);
+  const MSECONDS_PER_DAY = 1000 * 60 * 60 * 24;
+  const MSECONDS_PER_HOUR = 1000 * 60 * 60;
+  const MSECONDS_PER_MIN = 1000 * 60;
+  const MSECONDS_PER_SEC = 1000;
 
-    let timer = setInterval(() => {
-      let timerLeft = timeGoal - Date.now();
+  let timer = setInterval(() => {
+    let timerLeft = goalTime - Date.now();
 
-      if (timerLeft >= 0) {
-        const MSECONDS_PER_DAY = 1000 * 60 * 60 * 24;
-        const MSECONDS_PER_HOUR = 1000 * 60 * 60;
-        const MSECONDS_PER_MIN = 1000 * 60;
-        const MSECONDS_PER_SEC = 1000;
+    if (timerLeft >= 0) {
+      const days = Math.floor(timerLeft / MSECONDS_PER_DAY);
+      const hours = Math.floor(
+        (timerLeft % MSECONDS_PER_DAY) / MSECONDS_PER_HOUR
+      );
+      const minutes = Math.floor(
+        (timerLeft % MSECONDS_PER_HOUR) / MSECONDS_PER_MIN
+      );
+      const second = Math.floor(
+        (timerLeft % MSECONDS_PER_MIN) / MSECONDS_PER_SEC
+      );
 
-        const days = Math.floor(timerLeft / MSECONDS_PER_DAY);
-        const hours = Math.floor(
-          (timerLeft % MSECONDS_PER_DAY) / MSECONDS_PER_HOUR
-        );
-        const minutes = Math.floor(
-          (timerLeft % MSECONDS_PER_HOUR) / MSECONDS_PER_MIN
-        );
-        const second = Math.floor(
-          (timerLeft % MSECONDS_PER_MIN) / MSECONDS_PER_SEC
-        );
-
-        countdownItemSpans[0].innerHTML = String(days).padStart(2, "0");
-        countdownItemSpans[1].innerHTML = String(hours).padStart(2, "0");
-        countdownItemSpans[2].innerHTML = String(minutes).padStart(2, "0");
-        countdownItemSpans[3].innerHTML = String(second).padStart(2, "0");
-      } else {
-        clearInterval(timer);
-      }
-    }, 1000);
-  }
+      countdownItemSpans[0].innerHTML = String(days).padStart(2, "0");
+      countdownItemSpans[1].innerHTML = String(hours).padStart(2, "0");
+      countdownItemSpans[2].innerHTML = String(minutes).padStart(2, "0");
+      countdownItemSpans[3].innerHTML = String(second).padStart(2, "0");
+    } else {
+      clearInterval(timer);
+      initCountdownItem(countdownItem, daysToAdd);
+    }
+  }, 1000);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const countdown = document.querySelectorAll(".countdown");
+  initCoundown(countdown);
+});
 
 function sliderInit() {
   if (document.querySelector(".slider-reviews")) {
@@ -208,51 +210,55 @@ function sliderInit() {
 }
 
 function parallaxInit(parallaxItems) {
-	window.addEventListener("scroll", windowScroll);
+  window.addEventListener("scroll", windowScroll);
 
-	function windowScroll() {
-		const currentItems = document.querySelectorAll(".parallax");
+  function windowScroll() {
+    const currentItems = document.querySelectorAll(".parallax");
 
     if (currentItems.length) {
-      currentItems.forEach(currentItem => {
-        const parallaxItem = currentItem.querySelector('[data-parallax-item]');
+      currentItems.forEach((currentItem) => {
+        const parallaxItem = currentItem.querySelector("[data-parallax-item]");
 
         if (parallaxItem) {
           const windowHeight = window.innerHeight + currentItem.offsetHeight;
           const currentItemHeight = currentItem.offsetHeight;
-          const topPosition = currentItem.getBoundingClientRect().top + currentItemHeight;
-          const way = (topPosition / (windowHeight / 2) * 100) - 100;
-          const difference = (currentItemHeight - parallaxItem.offsetHeight) / parallaxItem.offsetHeight * way;
+          const topPosition =
+            currentItem.getBoundingClientRect().top + currentItemHeight;
+          const way = (topPosition / (windowHeight / 2)) * 100 - 100;
+          const difference =
+            ((currentItemHeight - parallaxItem.offsetHeight) /
+              parallaxItem.offsetHeight) *
+            way;
 
           parallaxItem.style.cssText = `translate: 0 ${difference}% `;
         }
-      })
+      });
     }
-	}
+  }
 
-	const options = {
-		root: null,
-		rootMargin: "0px",
-		threshold: 0,
-	}
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0,
+  };
 
-	const callback = (entries, observer) => {
-		entries.forEach(entry => {
-			const currentElement = entry.target;
+  const callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      const currentElement = entry.target;
 
-			if (entry.isIntersecting) {
-				currentElement.classList.add('parallax');
-				console.log("I see you");
-			} else {
-				currentElement.classList.remove('parallax');
-				console.log("I don't see you!")
-			}
-		});
-	};
+      if (entry.isIntersecting) {
+        currentElement.classList.add("parallax");
+        console.log("I see you");
+      } else {
+        currentElement.classList.remove("parallax");
+        console.log("I don't see you!");
+      }
+    });
+  };
 
-	const observer = new IntersectionObserver(callback, options);
+  const observer = new IntersectionObserver(callback, options);
 
-	parallaxItems.forEach(parallaxItem => {
-		observer.observe(parallaxItem);
-	})
+  parallaxItems.forEach((parallaxItem) => {
+    observer.observe(parallaxItem);
+  });
 }
